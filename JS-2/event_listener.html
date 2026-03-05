@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button>클릭 전</button>
+
+    <script>
+        const btn = document.querySelector("button");
+
+        function clickButton() {
+            btn.textContent = "클릭 됨";
+        }
+
+        // click 이벤트가 발생하면, clickButton을 실행해라
+        btn.addEventListener("click", clickButton)
+    </script> -->
+
+    <input type="text" id="name" placeholder="이름 입력...">
+    <div id="preview"></div>
+
+    <script>
+        const inputTag = document.querySelector('#name');
+        const divTag = document.querySelector("#preview");
+
+        // input 이벤트가 발생할 때마다, inputTag 값을 preview에 보여주기
+        inputTag.addEventListener("input", function () {
+            divTag.textContent = inputTag.value;
+        })
+    </script>
+</body>
+</html>
