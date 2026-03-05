@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">마우스를 올려보세요.</div>
+
+    <script>
+        const box = document.querySelector("#box");
+
+        function changeColor() {
+            box.style.color = "skyblue";
+        }
+
+        box.addEventListener("mouseover", changeColor)
+
+        box.addEventListener("mouseout", () => box.style.color = "black")
+    </script>
+</body>
+</html>
